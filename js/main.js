@@ -6,6 +6,9 @@ const contactContent = document.querySelector('#contact-content')
 const projects = document.querySelector('#projects')
 const projectsContent = document.querySelector('#projects-content')
 
+const degrees = document.querySelector('#degrees')
+const degreesContent = document.querySelector('#degrees-content')
+
 about.addEventListener('click', () => {
   const aboutBox = new WinBox({
     title: 'About Me',
@@ -64,3 +67,24 @@ projects.addEventListener('click', () => {
     },
   })
 })
+
+degrees.addEventListener('click', () => {
+  const degreesBox = new WinBox({
+    title: 'My Degrees & Skills',
+    // modal: true,
+    width: '400px',
+    height: '400px',
+    top: 50,
+    right: 50,
+    bottom: 50,
+    left: 50,
+    mount: projectsContent,
+    onfocus: function () {
+      this.setBackground('#00aa00')
+    },
+    onblur: function () {
+      this.setBackground('#777')
+    },
+  })
+})
+
