@@ -78,7 +78,7 @@ degrees.addEventListener('click', () => {
     right: 50,
     bottom: 50,
     left: 50,
-    mount: projectsContent,
+    mount: degreesContent,
     onfocus: function () {
       this.setBackground('#00aa00')
     },
